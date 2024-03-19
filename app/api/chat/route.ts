@@ -45,7 +45,7 @@ export async function POST(req: Request) {
   );
 
   const response = Hf.textGenerationStream({
-    model: "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5",
+    model: "meta-llama/Llama-2-7b-chat-hf",
     inputs: buildPrompt(messages),
     parameters: {
       max_new_tokens: 200,
