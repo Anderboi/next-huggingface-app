@@ -45,7 +45,7 @@ export async function POST(req: Request) {
   );
 
   const response = Hf.textGenerationStream({
-    model: "meta-llama/llama-2-70b-chat-hf",
+    model: "meta-llama/Llama-2-70b-chat-hf",
     inputs: buildPrompt(messages),
     parameters: {
       max_new_tokens: 200,
