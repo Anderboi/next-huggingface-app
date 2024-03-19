@@ -46,7 +46,7 @@ export async function POST(req: Request) {
 
   const response = Hf.textGenerationStream({
     model: "meta-llama/llama-2-70b-chat-hf",
-    inputs: experimental_buildOpenAssistantPrompt(messages),
+    inputs: buildPrompt(messages),
     parameters: {
       max_new_tokens: 200,
       // @ts-ignore (this is a valid parameter specifically in OpenAssistant models)
